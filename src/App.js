@@ -12,7 +12,7 @@ function App() {
                 <p className="text-3xl font-light">I am a Software Engineer and a Freelance Web Developer located in NYC</p>
             </div>
             <div>
-                <img id="headshot" src={headshot} alt="image of jasmyne" className="w-96 rounded-full"/>
+                <img id="headshot" src={headshot} alt="jasmyne" className="w-96 rounded-full"/>
             </div>
         </div>
      </div>
