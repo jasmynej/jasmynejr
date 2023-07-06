@@ -1,3 +1,15 @@
 h2 {
-    border-bottom-color: #f2698b;
+    border-bottom-color: #d90077;
+}
+
+.title {
+    border-bottom-color: #e090df;
+}
+
+#job-title:hover {
+    @apply opacity-75 cursor-pointer;
+}
+
+#job-content {
+    @apply overflow-auto duration-700 ease-in-out;
 }

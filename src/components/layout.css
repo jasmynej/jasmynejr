@@ -11,11 +11,11 @@ header,footer {
     @apply  border-b-4 border-transparent;
 }
 .nav-item:hover {
-    border-bottom-color:#d05fad;
+    border-bottom-color:#d90077;
     @apply border-b-4;
 }
 
 .active {
-    border-bottom-color:#d05fad;
+    border-bottom-color:#d90077;
     @apply border-b-4;
 }
