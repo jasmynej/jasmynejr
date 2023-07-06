@@ -5,7 +5,7 @@ function Layout({children}){
         <div className="w-screen h-screen flex flex-col">
             <header className="w-full grid grid-cols-2 items-center drop-shadow-sm">
 
-                <img src={logo} className="w-20 ml-2"/>
+                <img src={logo} className="w-20 ml-2" alt="jasmyne jean-remy name surrounded by flowers"/>
                 <div className="flex w-1/2 justify-between justify-self-end mr-3" id="nav-items">
                     <div className="nav-item">
                         <p>Resume</p>
