@@ -1,0 +1,8 @@
+header,footer {
+    background-color: #FFF7F7;
+}
+
+
+.nav-item p {
+    @apply uppercase tracking-wide;
+}
