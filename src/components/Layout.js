@@ -1,14 +1,18 @@
 import logo from "../images/Jasmyne Jean-Remy Logo.png"
 import "./layout.css"
+import {NavLink, useNavigate} from "react-router-dom";
 function Layout({children}){
+    const navigate = useNavigate();
     return (
         <div className="w-screen h-screen flex flex-col">
             <header className="w-full grid grid-cols-2 items-center">
 
-                <img src={logo} className="w-20 ml-2" alt="jasmyne jean-remy name surrounded by flowers"/>
+                <img src={logo} className="w-20 ml-2" alt="jasmyne jean-remy name surrounded by flowers" onClick={()=>{navigate("/")}}/>
                 <div className="flex w-1/2 justify-between justify-self-end mr-3" id="nav-items">
                     <div className="nav-item">
-                        <p>Resume</p>
+                        <NavLink to="/resume">
+                            <p>Resume</p>
+                        </NavLink>
                     </div>
                     <div className="nav-item">
                         <p>Skills</p>

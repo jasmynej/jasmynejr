@@ -7,10 +7,10 @@
     src: url("./fonts/Manrope-VariableFont_wght.ttf");
 }
 
-h1,h2,h3 {
+h1,h2 {
     font-family: 'Bellota', cursive;
 }
 
-p {
+body {
     font-family: Manrope,sans-serif;
 }

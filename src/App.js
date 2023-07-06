@@ -6,7 +6,7 @@ function App() {
   return (
     <Layout>
      <div className="h-full w-full flex justify-center items-center">
-        <div id="intro" className="flex items-center gap-2 p-4 border-8 border-dotted ">
+        <div id="intro" className="flex items-center gap-2 p-4">
             <div>
                 <h1 className="text-6xl font-bold tracking-wide">Hi! I'm Jasmyne Jean-Remy</h1>
                 <p className="text-3xl font-light">I am a Software Engineer and a Freelance Web Developer located in NYC</p>

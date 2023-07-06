@@ -1,8 +1,21 @@
 header,footer {
-    background-color: #FFF7F7;
+    background-color: #fcf8f8;
 }
 
 
 .nav-item p {
     @apply uppercase tracking-wide;
+}
+
+.nav-item {
+    @apply  border-b-4 border-transparent;
+}
+.nav-item:hover {
+    border-bottom-color:#d05fad;
+    @apply border-b-4;
+}
+
+.active {
+    border-bottom-color:#d05fad;
+    @apply border-b-4;
 }
