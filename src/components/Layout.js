@@ -8,10 +8,10 @@ function Layout({children,activePage}){
         <div className="w-screen h-screen flex flex-col">
             {isTabletOrMobile ?
                 <MobileNav/> :
-                <DesktopNav/>
+                <DesktopNav activePage={activePage}/>
             }
 
-            <main className="flex-grow">
+            <main className="flex-grow flex items-center justify-center">
                 {children}
             </main>
             <footer className="text-center p-2">
