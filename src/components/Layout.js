@@ -7,7 +7,7 @@ function Layout({children,activePage}){
     return (
         <div className="w-screen h-screen flex flex-col">
             {isTabletOrMobile ?
-                <MobileNav/> :
+                <MobileNav activePage={activePage}/> :
                 <DesktopNav activePage={activePage}/>
             }
 
