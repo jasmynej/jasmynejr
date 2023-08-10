@@ -7,6 +7,7 @@ import Resume from "./pages/Resume";
 import Skills from "./pages/Skills";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import SkillDetails from "./components/SkillDetails";
 
 const router = createBrowserRouter([
     {
@@ -19,7 +20,13 @@ const router = createBrowserRouter([
     },
     {
         path:"/skills",
-        element:<Skills/>
+        element:<Skills/>,
+        children: [
+            {
+                path:":name",
+                element:<SkillDetails/>
+            }
+        ]
     },
     {
         path:"/services",

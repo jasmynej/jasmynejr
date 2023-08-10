@@ -11,7 +11,7 @@ function Layout({children,activePage}){
                 <DesktopNav activePage={activePage}/>
             }
 
-            <main className="flex-grow flex items-center justify-center">
+            <main className="flex-grow flex flex-col items-center justify-center">
                 {children}
             </main>
             <footer className="text-center p-2">

@@ -9,11 +9,14 @@ import tailwind_logo from "../images/tailwind_logo.png"
 import bootstrap_logo from "../images/bootstrap_logo.png"
 import SkillCard from "../components/SkillCard";
 import { useMediaQuery } from 'react-responsive'
+import {Outlet} from "react-router-dom";
 function Skills (){
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
     return (
         <Layout activePage="skills">
+            <Outlet/>
             <div className={isTabletOrMobile ? "flex flex-col gap-3 overflow-auto": "flex flex-wrap gap-3 w-screen justify-center"}>
+
                 <SkillCard name="React" image={react_logo}/>
                 <SkillCard name="Javascript" image={js_logo}/>
                 <SkillCard name="PostgreSQL" image={postgres_logo}/>

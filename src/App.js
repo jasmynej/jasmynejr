@@ -1,5 +1,5 @@
 import './App.css';
-import headshot from "./images/headshot.jpeg"
+import headshot from "./images/headshot_2.JPG"
 import Layout from "./components/Layout";
 import { useMediaQuery } from 'react-responsive'
 
@@ -10,7 +10,7 @@ function App() {
         {isTabletOrMobile ?
             <div className="h-full w-full flex flex-col justify-center items-center">
                 <div>
-                    <img id="headshot" src={headshot} alt="jasmyne" className="w-2/3 rounded-full mx-auto"/>
+                    <img id="headshot" src={headshot} alt="jasmyne" className="w-2/4 rounded-full mx-auto"/>
                 </div>
                 <div className="text-center p-1">
                     <h1 className="text-5xl font-bold tracking-wide">Hi! I'm Jasmyne Jean-Remy</h1>
