@@ -1,4 +1,4 @@
-import logo from "../images/Jasmyne Jean-Remy Logo.png"
+import logo from "../images/jasmyne_logo.png"
 import {useState} from "react";
 import {useNavigate,NavLink} from "react-router-dom";
 function MobileNav({activePage}){

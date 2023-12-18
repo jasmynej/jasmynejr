@@ -1,4 +1,4 @@
-import logo from "../images/Jasmyne Jean-Remy Logo.png"
+import logo from "../images/jasmyne_logo.png"
 import "./layout.css"
 
 import {useNavigate,NavLink} from "react-router-dom";

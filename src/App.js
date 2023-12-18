@@ -1,37 +1,42 @@
 import './App.css';
-import headshot from "./images/headshot_2.JPG"
-import Layout from "./components/Layout";
 import { useMediaQuery } from 'react-responsive'
-
+import logo from "./images/jasmyne_logo.png"
 function App() {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   return (
-    <Layout>
-        {isTabletOrMobile ?
-            <div className="h-full w-full flex flex-col justify-center items-center">
+    <div id="home-container" className="flex h-screen">
+        <div id="side-1" className="w-2/5">
+            <div className="w-full h-1/3" id="circle-pattern">
+            </div>
+            <div className="flex justify-center items-center h-1/3">
+                <div className="leading-loose">
+                    <h3 className="text-lg">Hi! 👋🏽 I'm</h3>
+                    <h1 className="text-5xl font-bold">Jasmyne Jean-Remy</h1>
+                    <h3 className="text-xl font-thin uppercase">Software Engineer + Freelance Web Developer</h3>
+                </div>
+            </div>
+            <div className="w-full h-1/3" id="circle-pattern">
+            </div>
+        </div>
+        <div id="side-2" className="w-3/5">
+            <div className="w-full h-10 bg-white flex items-center justify-center gap-4" id="home-nav">
                 <div>
-                    <img id="headshot" src={headshot} alt="jasmyne" className="w-2/4 rounded-full mx-auto"/>
+                    <p>Resume</p>
                 </div>
-                <div className="text-center p-1">
-                    <h1 className="text-5xl font-bold tracking-wide">Hi! I'm Jasmyne Jean-Remy</h1>
-                    <p className="text-2xl font-light">I am a Software Engineer and a Freelance Web Developer located in NYC</p>
+                <div>
+                    <p>Projects</p>
                 </div>
-            </div>
-            :
-            <div className="h-full w-full flex justify-center items-center">
-                <div id="intro" className="flex items-center gap-2 p-4">
-                    <div>
-                        <h1 className="text-6xl font-bold tracking-wide">Hi! I'm Jasmyne Jean-Remy</h1>
-                        <p className="text-3xl font-light">I am a Software Engineer and a Freelance Web Developer located in NYC</p>
-                    </div>
-                    <div>
-                        <img id="headshot" src={headshot} alt="jasmyne" className="w-96 rounded-full"/>
-                    </div>
+                <div>
+                    <p>Contact</p>
                 </div>
             </div>
-        }
+            <div className=" w-full flex justify-center items-center h-full">
+                <div className="w-96 h-96 rounded-full" id="headshot-image">
 
-    </Layout>
+                </div>
+            </div>
+        </div>
+    </div>
   );
 }
 
